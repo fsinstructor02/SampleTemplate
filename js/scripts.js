@@ -3,7 +3,6 @@
 
 jQuery(function(){ // JQuery function call to run code
 
-
-alert('ready');
+    
 
 });(jQuery); 
