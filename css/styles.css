@@ -13,8 +13,6 @@ body{
     background-color: rgba(117, 117, 117, 0.5);
 }
 
-
-
 .main-footer {
     bottom: 0px;
     left: 0px;
@@ -25,4 +23,11 @@ body{
     top: 0px;
     left: 0px;
     position: absolute;
+}
+
+
+.main-continer {
+    position: relative;
+    width: 100%;
+    height: auto;
 }
