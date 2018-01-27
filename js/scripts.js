@@ -13,6 +13,7 @@ jQuery(function(){ // JQuery function call to run code
         var logoFilename =  mediaContent[i]["channel"]["logoFilename"];
         var stationHD =  mediaContent[i]["channel"]["stationHD"];
         var stationID =  mediaContent[i]["channel"]["stationID"];
+        //var episodeNumber =  mediaContent[i]["channel"]["episodeNumber"];
     
         console.log(channelName);
         console.log(stationType);
@@ -21,9 +22,21 @@ jQuery(function(){ // JQuery function call to run code
         console.log(logoFilename);
         console.log(stationHD);
         console.log(stationID);
+       // console.log(episodeNumber);
 
 
         //Listings Section
+
+        try {
+            var rating =  mediaContent[i]["listings"][i]["rating"];
+            console.log(rating);
+        } catch (error) {}
+
+        try {
+            var episodeNumber =  mediaContent[i]["listings"][i]["episodeNumber"];
+            console.log(episodeNumber);
+        } catch (error) {}
+
         try {
             var castNames =  mediaContent[i]["listings"][i]["cast"];
             console.log(castNames);
